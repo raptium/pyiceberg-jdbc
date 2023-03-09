@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pyiceberg-jdbc"
+version = "0.1.0"
+description = ""
+authors = ["Hao Guan <gh@raptium.net>"]
+packages = [
+    { include = "pyiceberg_jdbc", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyiceberg = "^0.3.0"
+psycopg2-binary = "^2.9.5"
+SQLAlchemy = "^2.0.5"
+pyarrow = "^11.0.0"
+
+[tool.poetry.dev-dependencies]
+black = "^23.1.0"
+pandas = "^1.5.3"
+pytest = "^7.2.2"
+s3fs = "2023.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
