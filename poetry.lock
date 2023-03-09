@@ -378,7 +378,7 @@ testing = ["pytest", "pytest-benchmark"]
 name = "psycopg2-binary"
 version = "2.9.5"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -543,6 +543,7 @@ python-versions = ">=3.7.0"
 [package.dependencies]
 markdown-it-py = ">=2.1.0,<3.0.0"
 pygments = ">=2.6.0,<3.0.0"
+typing-extensions = {version = ">=4.0.0,<5.0", markers = "python_version < \"3.9\""}
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
@@ -672,8 +673,8 @@ cffi = ["cffi (>=1.11)"]
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.9"
-content-hash = "db5b11315413e9ece65343d8cf87c1514367a6d98c8887bab44de9ad9ea73c5b"
+python-versions = "^3.8"
+content-hash = "b4ea5e3009b5302e7637e4233450ec7d31eeee602a6ac7fba6063bc2f9efc8ba"
 
 [metadata.files]
 aiobotocore = [
