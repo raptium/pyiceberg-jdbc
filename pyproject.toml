@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "pyiceberg-jdbc"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "Database Catalog Support for PyIceberg"
 authors = ["Hao Guan <gh@raptium.net>"]
+repository = "https://github.com/raptium/pyiceberg-jdbc"
 packages = [
     { include = "pyiceberg_jdbc", from = "src" },
 ]
