@@ -95,7 +95,9 @@ class DatabaseCatalog(Catalog):
             query = (
                 select(IcebergTables.c.table_name)
                 .where(IcebergTables.c.catalog_name == self.name)
-                .where(IcebergTables.c.table_namespace == namespace)
+                .where(
+                    IcebergTables.c.table_namespace == self.identifier_to_str(namespace)
+                )
             )
             return [namespace + (c[0],) for c in conn.execute(query)]
 

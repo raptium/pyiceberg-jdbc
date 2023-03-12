@@ -44,3 +44,7 @@ class TestDatabaseCatalog(unittest.TestCase):
     def test_load_namespace_properties(self):
         properties = self.catalog.load_namespace_properties("foo")
         self.assertEqual(properties, {"k1": "v1", "k2": "v2"})
+
+    def test_list_tables(self):
+        tables = self.catalog.list_tables("foo")
+        self.assertEqual(tables, [("foo", "bar")])
